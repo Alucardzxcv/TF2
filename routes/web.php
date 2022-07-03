@@ -28,6 +28,7 @@ Route::post('/categorias/update/{id}', [App\Http\Controllers\CategoriaController
 Route::get('/categorias/{id}/delete', [App\Http\Controllers\CategoriaController::class, 'delete']);
 
 
+
 // libros venta
 
-Route::get('/categorias/libro', [App\Http\Controllers\CategoriaController::class, 'libro']);
+Route::get('/categorias/libro', [App\Http\Controllers\CategoriaController::class, 'traerData']);

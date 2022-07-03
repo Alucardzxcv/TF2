@@ -17,6 +17,12 @@ class CategoriaController extends Controller
 
     }
 
+    public function traerData()
+    {
+        $librosData=Categoria::All();
+        return view('categoria.libro1')->with('librosData',$librosData);
+    }
+
     public function insert(Request $request){
 
 $categoria= new Categoria();
