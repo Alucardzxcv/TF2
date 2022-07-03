@@ -12,7 +12,7 @@
     @foreach($librosData as $librosDatas)
     <div class="product-container">
         <h3>{{$librosDatas -> libro}}</h3>
-        <img src="https://www.adobe.com/es/express/create/cover/media_10487a00f81e45735d68f68bc2739b65bb4997de1.png?width=400&format=png&optimize=medium" />
+        <a> <img src="https://www.adobe.com/es/express/create/cover/media_10487a00f81e45735d68f68bc2739b65bb4997de1.png?width=400&format=png&optimize=medium" /></a>
         <h1>{{$librosDatas -> estado}}</h1>
         <button class="button-add" onclick="add('product-3', 250)">Agregar</button>
     </div>
